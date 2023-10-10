@@ -13,8 +13,8 @@ public class NormalDotGrid : MonoBehaviour
     public List<string> visitedDotNames = new List<string>(); //Storing the visited dots for password. 
 
     private float spacing = 70f; // Adjust this value to change the distance between dots
-
     private RectTransform panelRect;
+
     public LineRenderer lineRenderer;
     private List<Vector3> linePositions = new List<Vector3>(); //Points that render line
     private bool isDrawing = false;
@@ -177,7 +177,6 @@ public class NormalDotGrid : MonoBehaviour
                 lineRenderer.SetPositions(linePositions.ToArray());
 
                 visitedDotNames.Add(hitCollider.gameObject.name); // Adding dot to the password
-                Handheld.Vibrate();
                 currentDot = hitCollider.gameObject; // Set the current dot to the newly visited dot
             }
             else

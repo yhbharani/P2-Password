@@ -200,6 +200,7 @@ public class HoldDotGrid : MonoBehaviour
 
                         // Add the dot's name to the visitedDotNames list again when its state changes
                         visitedDotNames.Add(hitCollider.gameObject.name);
+                        Handheld.Vibrate();
                     }
                 }
             }

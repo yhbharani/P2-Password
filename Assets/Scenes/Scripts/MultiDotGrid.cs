@@ -221,7 +221,6 @@ public class MultiDotGrid : MonoBehaviour
                     lineRenderer.SetPositions(linePositions.ToArray());
 
                     visitedDotNames.Add(hitCollider.gameObject.name); //Adding dot to the password
-                    Handheld.Vibrate();
                     currentDot = hitCollider.gameObject; // Set the current dot to the newly visited dot
                 }
             }
